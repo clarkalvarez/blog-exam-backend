@@ -1,0 +1,89 @@
+### Get User
+GET http://localhost:3000/users/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6InRlc3QyIiwiZW1haWwiOiJ0ZXN0MkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQweG1GL04xclNFYm1BRll5UVRCZjJ1WTlrN2hhQ20vUzNHN3lIbFBINkRoTHBpandVT081MiIsInJvbGUiOnsiaWQiOjIsIm5hbWUiOiJFbXBsb3llZSJ9LCJpYXQiOjE3MTk0NTkwMzksImV4cCI6MTcxOTQ2MjYzOX0.oT6mGSsee9sHEQ5PmqHjqJbbBS3R2MJF-_hUeRnduBg
+
+### Get All User
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6InRlc3QyIiwiZW1haWwiOiJ0ZXN0MkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQweG1GL04xclNFYm1BRll5UVRCZjJ1WTlrN2hhQ20vUzNHN3lIbFBINkRoTHBpandVT081MiIsInJvbGUiOnsiaWQiOjIsIm5hbWUiOiJFbXBsb3llZSJ9LCJpYXQiOjE3MTk0NTkwMzksImV4cCI6MTcxOTQ2MjYzOX0.oT6mGSsee9sHEQ5PmqHjqJbbBS3R2MJF-_hUeRnduBg
+
+### Create User
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "test5",
+  "email": "test5@gmail.com",
+  "password": "12345",
+  "role": "Employee"
+}
+
+### Update User
+PUT http://localhost:3000/users/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6ImNsYXJrIiwiZW1haWwiOiJjbGFya0BnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQwME5yaEh2YTVTQWdLUWVjWEM3Q2NlQlYzQmxmQldLTXVqcVY0ejJwMWs4VURSTWQ1NkFRMiIsInJvbGUiOnsiaWQiOjEsIm5hbWUiOiJBZG1pbiJ9LCJpYXQiOjE3MTk0NTkzNjEsImV4cCI6MTcxOTQ2Mjk2MX0.LuYvCHqIawuY6Q6SGpk3q0IMkmSPf4tsFW47_4uz2To
+Content-Type: application/json
+
+{
+  "name": "test12",
+  "email": "test13@gmail.com",
+  "password": "12345",
+  "role": "Admin"
+}
+
+### Delete user
+DELETE http://localhost:3000/users/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6ImNsYXJrIiwiZW1haWwiOiJjbGFya0BnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQwME5yaEh2YTVTQWdLUWVjWEM3Q2NlQlYzQmxmQldLTXVqcVY0ejJwMWs4VURSTWQ1NkFRMiIsInJvbGUiOnsiaWQiOjEsIm5hbWUiOiJBZG1pbiJ9LCJpYXQiOjE3MTk0NTkzNjEsImV4cCI6MTcxOTQ2Mjk2MX0.LuYvCHqIawuY6Q6SGpk3q0IMkmSPf4tsFW47_4uz2To
+Content-Type: application/json
+ 
+
+### Create Post 
+POST http://localhost:3000/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6InRlc3QyIiwiZW1haWwiOiJ0ZXN0MkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRsMFdYSTd2R09SQm1udmZ5WHFnWHNPMUFISndEZmtCSEkzcUdtREN0VVQ4cU5CVzZxbFprZSIsImlhdCI6MTcxOTU0NzA0NCwiZXhwIjoxNzE5NTUwNjQ0fQ.GHQD11fsuHm0V42aqgp-DdJ2jb_LxQI2tA0cdemyVqk
+
+{
+  "title": "My First Post",
+  "date": "2024-05-22",
+  "userId": "1"
+}
+
+### Get Posts
+
+GET http://localhost:3000/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6InRlc3QyIiwiZW1haWwiOiJ0ZXN0MkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRsMFdYSTd2R09SQm1udmZ5WHFnWHNPMUFISndEZmtCSEkzcUdtREN0VVQ4cU5CVzZxbFprZSIsImlhdCI6MTcxOTU0NzA0NCwiZXhwIjoxNzE5NTUwNjQ0fQ.GHQD11fsuHm0V42aqgp-DdJ2jb_LxQI2tA0cdemyVqk
+
+{
+  "title": "My First Post",
+  "date": "2024-05-22",
+}
+
+### Create Comment 
+POST http://localhost:3000/comments
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6InRlc3QyIiwiZW1haWwiOiJ0ZXN0MkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRsMFdYSTd2R09SQm1udmZ5WHFnWHNPMUFISndEZmtCSEkzcUdtREN0VVQ4cU5CVzZxbFprZSIsImlhdCI6MTcxOTU0NzA0NCwiZXhwIjoxNzE5NTUwNjQ0fQ.GHQD11fsuHm0V42aqgp-DdJ2jb_LxQI2tA0cdemyVqk
+{
+  "postId": "2",
+  "comment": "This is great", 
+  "userId": "1"
+
+}
+
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6InRlc3QzIiwiZW1haWwiOiJ0ZXN0M0BnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCR1MllVQUR5Y3daVi9wVWlQWUx2Z0FleE10eUJMeTRmbWFGa1F0OG1HdXhZQUtTWkRqUU9jZSIsImlhdCI6MTcxOTU0Njg1MSwiZXhwIjoxNzE5NTUwNDUxfQ.k3aEvKVvJ-TCTIa7Dg0AMFBhu4ftJIGnqC3w8--yiWA
+
+{
+  "email": "test2@gmail.com",
+  "password": "12345"
+}
+ 
+###
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "name": "test2",
+  "email": "test2@gmail.com",
+  "password": "12345"
+}
